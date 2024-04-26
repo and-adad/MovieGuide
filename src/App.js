@@ -24,9 +24,9 @@ function App(props) {
           Лучшие фильмы
         </p>
 
-        <button onClick={() => setCounter((prevCount) => prevCount -1)}>-</button>
+        <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
         <h1>{counter}</h1>
-        <button>+</button>
+        <button onClick={() => setCounter((prevCount) => prevCount + 1)}>+</button>
 
         <MovieCard name={'Spiderman'} />
         <MovieCard name={'Superman'} />
