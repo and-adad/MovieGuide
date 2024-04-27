@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
+
+const API_URL = 'http://www.omdbapi.com?apikey=17249cd7'
 
 const subject = "Кино справочник";
 const MovieCard = (props) => {
@@ -12,8 +14,16 @@ const MovieCard = (props) => {
 
 
 function App(props) {
+  const searchMovies = async (title) => {
+    const response = await fetch(`${API_URL}&s=${title}`);
+    const data = await response.json();
+
+    console.log(data);
+  }
   const [counter, setCounter] = useState(0);
-  
+  useEffect(() => {
+    searchMovies('Spiderman');
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
