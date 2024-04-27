@@ -15,7 +15,7 @@ const movie2 =     {
   "Title": "Superman, Spiderman or Batman",
   "Year": "2011",
   "imdbID": "tt2084949",
-  "Type": "movie",
+  "Type": "series",
   "Poster": "https://m.media-amazon.com/images/M/MV5BMjQ4MzcxNDU3N15BMl5BanBnXkFtZTgwOTE1MzMxNzE@._V1_SX300.jpg"
 }
 
@@ -75,9 +75,11 @@ function App(props) {
             <div>
               <p>{movie1.Year}</p>
             </div>
-
             <div>
               <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+            </div>
+            <div>
+              <span>{movie1.Type}</span>
             </div>
           </div>
 
@@ -88,32 +90,8 @@ function App(props) {
             <div>
               <img src={movie2.Poster !== 'N/A' ? movie2.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
             </div>
-          </div>
-
-          <div className='movie'>
             <div>
-              <p>{movie3.Year}</p>
-            </div>
-           <div>
-              <img src={movie3.Poster !== 'N/A' ? movie3.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
-            </div>
-          </div>
-          <div className='movie'>
-            <div>
-              <p>{movie1.Year}</p>
-            </div>
-
-            <div>
-              <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
-            </div>
-          </div>
-
-          <div className='movie'>
-            <div>
-              <p>{movie2.Year}</p>
-            </div>
-            <div>
-              <img src={movie2.Poster !== 'N/A' ? movie2.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+              <span>{movie2.Type}</span>
             </div>
           </div>
 
@@ -124,32 +102,8 @@ function App(props) {
            <div>
               <img src={movie3.Poster !== 'N/A' ? movie3.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
             </div>
-          </div>
-          <div className='movie'>
             <div>
-              <p>{movie1.Year}</p>
-            </div>
-
-            <div>
-              <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
-            </div>
-          </div>
-
-          <div className='movie'>
-            <div>
-              <p>{movie2.Year}</p>
-            </div>
-            <div>
-              <img src={movie2.Poster !== 'N/A' ? movie2.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
-            </div>
-          </div>
-
-          <div className='movie'>
-            <div>
-              <p>{movie3.Year}</p>
-            </div>
-           <div>
-              <img src={movie3.Poster !== 'N/A' ? movie3.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+              <span>{movie3.Type}</span>
             </div>
           </div>
         </div>
