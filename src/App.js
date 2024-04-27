@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import MovieCard from './MovieCard';
 
 const API_URL = 'http://www.omdbapi.com?apikey=17249cd7'
 
@@ -37,6 +38,7 @@ const MovieCardMe = (props) => {
 
 
 function App(props) {
+  const [movies, setMovies] = useState([]);
 
   const searchMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
@@ -70,46 +72,26 @@ function App(props) {
         <MovieCardMe name={'Bananaman'} />
         <MovieCardMe name={'Batman'} />
         <MovieCardMe name={'Man'} />
-        <div className='container'>
-          <div className='movie'>
-            <div>
-              <p>{movie1.Year}</p>
-            </div>
-            <div>
-              <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
-            </div>
-            <div>
-              <span>{movie1.Type}</span>
-              <h3>{movie1.Title}</h3>
-            </div>
-          </div>
 
-          <div className='movie'>
-            <div>
-              <p>{movie2.Year}</p>
+        {
+          movies?.length > 0
+          ? (
+            <div className='container'>
+          
+              <MovieCard movie1={movie1} />
+              <MovieCard movie1={movie1} />
+              <MovieCard movie1={movie1} />
+  
             </div>
-            <div>
-              <img src={movie2.Poster !== 'N/A' ? movie2.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+          ) : (
+            <div className='empty'>
+              <h2>No movies found</h2>
             </div>
-            <div>
-              <span>{movie2.Type}</span>
-              <h3>{movie2.Title}</h3>
-            </div>
-          </div>
+          )
+        }
 
-          <div className='movie'>
-            <div>
-              <p>{movie3.Year}</p>
-            </div>
-           <div>
-              <img src={movie3.Poster !== 'N/A' ? movie3.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
-            </div>
-            <div>
-              <span>{movie3.Type}</span>
-              <h3>{movie3.Title}</h3>
-            </div>
-          </div>
-        </div>
+
+
     </div>
   );
 }
