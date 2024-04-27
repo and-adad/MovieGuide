@@ -44,7 +44,7 @@ function App(props) {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
 
-    console.log(data.Search);
+    setMovies(data.Search);
   }
 
   useEffect(() => {
@@ -96,6 +96,6 @@ function App(props) {
 
     </div>
   );
-}
+};
 
 export default App;
