@@ -3,7 +3,14 @@ import './App.css';
 
 const API_URL = 'http://www.omdbapi.com?apikey=17249cd7'
 
-const subject = "Кино справочник";
+const movie1 = {
+  "Title": "Spiderman",
+  "Year": "1990",
+  "imdbID": "tt0100669",
+  "Type": "movie",
+  "Poster": "N/A"
+}
+
 const MovieCard = (props) => {
   return (
     <>
@@ -34,9 +41,9 @@ function App(props) {
         <h1>{props.subject}</h1>
       </header>
 
-        <p>
+        <h2>
           Лучшие фильмы
-        </p>
+        </h2>
 
         <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
         <h1>{counter}</h1>
@@ -47,6 +54,14 @@ function App(props) {
         <MovieCard name={'Batman'} />
         <MovieCard name={'Bananaman'} />
         <MovieCard name={'Man'} />
+        <div className='container'>
+          <div className='movie'>
+            <div>
+              <p>{movie1.Year}</p>
+            </div>
+          </div>
+
+        </div>
     </div>
   );
 }
