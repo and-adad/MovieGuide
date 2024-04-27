@@ -27,7 +27,7 @@ const movie3 =     {
   "Poster": "https://m.media-amazon.com/images/M/MV5BZWQxMjcwNjItZjI0ZC00ZTc4LWIwMzItM2Q0YTZhNzI3NzdlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg"
 }
 
-const MovieCard = (props) => {
+const MovieCardMe = (props) => {
   return (
     <>
       <h1>Title: {props.name}</h1>
@@ -65,11 +65,11 @@ function App(props) {
         <h1>{counter}</h1>
         <button onClick={() => setCounter((prevCount) => prevCount + 1)}>+</button>
 
-        <MovieCard name={'Spiderman'} />
-        <MovieCard name={'Superman'} />
-        <MovieCard name={'Batman'} />
-        <MovieCard name={'Bananaman'} />
-        <MovieCard name={'Man'} />
+        <MovieCardMe name={'Spiderman'} />
+        <MovieCardMe name={'Superman'} />
+        <MovieCardMe name={'Bananaman'} />
+        <MovieCardMe name={'Batman'} />
+        <MovieCardMe name={'Man'} />
         <div className='container'>
           <div className='movie'>
             <div>
