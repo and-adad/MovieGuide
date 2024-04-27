@@ -80,6 +80,7 @@ function App(props) {
             </div>
             <div>
               <span>{movie1.Type}</span>
+              <h3>{movie1.Title}</h3>
             </div>
           </div>
 
@@ -92,6 +93,7 @@ function App(props) {
             </div>
             <div>
               <span>{movie2.Type}</span>
+              <h3>{movie2.Title}</h3>
             </div>
           </div>
 
@@ -104,6 +106,7 @@ function App(props) {
             </div>
             <div>
               <span>{movie3.Type}</span>
+              <h3>{movie3.Title}</h3>
             </div>
           </div>
         </div>
