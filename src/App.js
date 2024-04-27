@@ -79,14 +79,75 @@ function App(props) {
             <div>
               <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
             </div>
-
           </div>
+
           <div className='movie'>
+            <div>
+              <p>{movie2.Year}</p>
+            </div>
             <div>
               <img src={movie2.Poster !== 'N/A' ? movie2.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
             </div>
           </div>
+
           <div className='movie'>
+            <div>
+              <p>{movie3.Year}</p>
+            </div>
+           <div>
+              <img src={movie3.Poster !== 'N/A' ? movie3.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+            </div>
+          </div>
+          <div className='movie'>
+            <div>
+              <p>{movie1.Year}</p>
+            </div>
+
+            <div>
+              <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+            </div>
+          </div>
+
+          <div className='movie'>
+            <div>
+              <p>{movie2.Year}</p>
+            </div>
+            <div>
+              <img src={movie2.Poster !== 'N/A' ? movie2.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+            </div>
+          </div>
+
+          <div className='movie'>
+            <div>
+              <p>{movie3.Year}</p>
+            </div>
+           <div>
+              <img src={movie3.Poster !== 'N/A' ? movie3.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+            </div>
+          </div>
+          <div className='movie'>
+            <div>
+              <p>{movie1.Year}</p>
+            </div>
+
+            <div>
+              <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+            </div>
+          </div>
+
+          <div className='movie'>
+            <div>
+              <p>{movie2.Year}</p>
+            </div>
+            <div>
+              <img src={movie2.Poster !== 'N/A' ? movie2.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+            </div>
+          </div>
+
+          <div className='movie'>
+            <div>
+              <p>{movie3.Year}</p>
+            </div>
            <div>
               <img src={movie3.Poster !== 'N/A' ? movie3.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
             </div>
