@@ -77,10 +77,12 @@ function App(props) {
           movies?.length > 0
           ? (
             <div className='container'>
+
+              {movies.map((movie) => (
+                <MovieCard movie={movie} />
+              ))}
           
-              <MovieCard movie1={movie1} />
-              <MovieCard movie1={movie1} />
-              <MovieCard movie1={movie1} />
+
   
             </div>
           ) : (
