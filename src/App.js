@@ -14,16 +14,20 @@ const MovieCard = (props) => {
 
 
 function App(props) {
+
   const searchMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
 
-    console.log(data);
+    console.log(data.Search);
   }
-  const [counter, setCounter] = useState(0);
+
   useEffect(() => {
     searchMovies('Spiderman');
   }, []);
+
+  const [counter, setCounter] = useState(0);
+
   return (
     <div className="App">
       <header className="App-header">
