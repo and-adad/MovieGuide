@@ -36,6 +36,17 @@ p {
   margin-right: 20px;
 }
 
+.old {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.oldComponent {
+  display: flex;
+  flex-direction: column;
+}
+
 .app {
   padding: 4rem;
 

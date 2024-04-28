@@ -30,10 +30,10 @@ const API_URL = 'http://www.omdbapi.com?apikey=17249cd7'
 
 const MovieCardMe = (props) => {
   return (
-    <>
-      <h1>Title: {props.name}</h1>
-      <h2>Year: 1996</h2>
-    </>
+    <div className='oldComponent'>
+      <h4>Title: {props.name}</h4>
+      <h4>Year: 1996</h4>
+    </div>
   )
 }
 // если мы больше одной строки то фрагмент использовать обязательно <></>
@@ -77,11 +77,13 @@ function App(props) {
         )
       }
 
-      <MovieCardMe name='Spiderman' />
-      <MovieCardMe name='Bananaman' />
-      <MovieCardMe name='Superman' />
-      <MovieCardMe name='Batman' />
-      <MovieCardMe name='Man' />
+      <div className="old">
+        <MovieCardMe name='Spiderman' />
+        <MovieCardMe name='Bananaman' />
+        <MovieCardMe name='Superman' />
+        <MovieCardMe name='Batman' />
+        <MovieCardMe name='Man' />
+      </div>
   
       <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
       <h1>{counter}</h1>
