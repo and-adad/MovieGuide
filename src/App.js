@@ -60,32 +60,33 @@ function App(props) {
         <h1>{props.subject}</h1>
       </header>
 
-        <h2>
-          Лучшие фильмы
-        </h2>
+      <h1>
+        Лучшие фильмы
+      </h1>
 
-        <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
-        <h1>{counter}</h1>
-        <button onClick={() => setCounter((prevCount) => prevCount + 1)}>+</button>
+      {movies?.length > 0 ? (
+        <div className='container'>
+            {movies.map((movie) => (
+              <MovieCard movie={movie} />
+            ))}
+          </div>
+        ) : (
+          <div className='empty'>
+            <h2>No movies found</h2>
+          </div>
+        )
+      }
 
-        <MovieCardMe name='Spiderman' />
-        <MovieCardMe name='Bananaman' />
-        <MovieCardMe name='Superman' />
-        <MovieCardMe name='Batman' />
-        <MovieCardMe name='Man' />
+      <MovieCardMe name='Spiderman' />
+      <MovieCardMe name='Bananaman' />
+      <MovieCardMe name='Superman' />
+      <MovieCardMe name='Batman' />
+      <MovieCardMe name='Man' />
+  
+      <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
+      <h1>{counter}</h1>
+      <button onClick={() => setCounter((prevCount) => prevCount + 1)}>+</button>
 
-        {movies?.length > 0 ? (
-            <div className='container'>
-              {movies.map((movie) => (
-                <MovieCard movie={movie} />
-              ))}
-            </div>
-          ) : (
-            <div className='empty'>
-              <h2>No movies found</h2>
-            </div>
-          )
-        }
     </div>
   );
 };
