@@ -73,21 +73,21 @@ img {
   cursor: pointer;
 }
 
-/* button {
+button {
   padding: 20px 40px;
   border-radius: 0.5rem;
   margin-left: 15px;
-  color: #a1a1a1;
+  color: greenyellow;
   font-family: var(--font-raleway);
   font-weight: 900;
   letter-spacing: 0.75px;
   font-size: 1.25rem;
   cursor: pointer;
 
-  background: #1f2123;
+  background: silver;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-} */
+}
 
 .empty {
   width: 100%;
