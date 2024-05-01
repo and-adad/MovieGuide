@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 export default function PaginationRounded() {
   return (
     <Stack spacing={2}>
-      <Pagination count={5} shape="rounded" />
+      <Pagination count={5} shape="rounded" size="large" />
     </Stack>
   );
 }
