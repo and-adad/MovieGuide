@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import MovieCard from './MovieCard';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import PaginationRounded from './Pagination';
 
 const API_URL = 'http://www.omdbapi.com?apikey=17249cd7'
 
@@ -76,6 +81,8 @@ function App(props) {
           </div>
         )
       }
+
+      <PaginationRounded />
 
       <div className="old">
         <MovieCardMe name='Spiderman' />
