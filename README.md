@@ -1,4 +1,5 @@
 # Профильное задание React-разработчик (vk)
+![Главная страница по заданию](https://raw.githubusercontent.com/and-adad/MovieGuide/66dfc1afde2abdeaa8a621643b8238762fd63a3a/image-20240423105350-1.png)
 Выполнение тестового задания для получения стажировки React разработчик
 
 # PS
